@@ -30,6 +30,7 @@ public class PopMenuItem : MonoBehaviour {
 
 	public void Reset(){
 		isIdle = false;
+		gameObject.SetActive (true);
 		transform.localPosition = origPosition;
 		transform.localScale = origScale;
 		meshRenderer.material = material;

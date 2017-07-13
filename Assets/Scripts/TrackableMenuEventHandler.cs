@@ -31,12 +31,14 @@ namespace Vuforia
 		//public GameObject playerPlane;
 		//public startTweens[];
 		private TrackableBehaviour mTrackableBehaviour;
+		private CustomTrackableEventHandler customTrackable;
 		public Material playerMateral;
 
 
 		public virtual void Start()
 		{	
 			mTrackableBehaviour = GetComponent<TrackableBehaviour>();
+			customTrackable = GetComponent<CustomTrackableEventHandler>();
 			if (mTrackableBehaviour)
 			{
 				mTrackableBehaviour.RegisterTrackableEventHandler(this);
@@ -134,5 +136,13 @@ namespace Vuforia
 			}
 		}
 		//		#endregion // PRIVATE_METHODS
+
+		public void ShowMenu(){
+			customTrackable.StopVideo ();
+			for (int i = 0; i < menuItems.Length; i++) {
+				menuItems [i].Reset();
+				menuItems [i].Idle ();
+			}
+		}
 	}
 }

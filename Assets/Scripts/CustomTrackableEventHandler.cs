@@ -25,6 +25,7 @@ namespace Vuforia
 		//private ImageTargetBehaviour ITB;
 		//private TouchRotate touchRotate;
 		public MediaPlayer mediaPlayer;
+		public bool isMenu = false;
 
 		#endregion // PRIVATE_MEMBER_VARIABLES
 
@@ -96,6 +97,7 @@ namespace Vuforia
 //			if (touchRotate) {
 //				touchRotate.enabled = true;
 //			}
+			SceneController.currentTrackableObject = this.gameObject;
 			Canvas[] canvas = GetComponentsInChildren<Canvas> (true);
 			foreach (Canvas ca in canvas) {
 				ca.gameObject.SetActive (true);
@@ -119,13 +121,20 @@ namespace Vuforia
 //			if (touchRotate) {
 //				touchRotate.enabled = false;
 //			}
+			SceneController.currentTrackableObject = null;
 			Canvas[] canvas = GetComponentsInChildren<Canvas> (true);
 			foreach (Canvas ca in canvas) {
 				ca.gameObject.SetActive (false);
 			}
-			if(mediaPlayer)
-				VideoController.instant._videoSeekSlider.gameObject.SetActive(false);
-				mediaPlayer.Stop();
+			StopVideo ();
+		}
+
+
+		public void StopVideo(){
+			if (mediaPlayer) {
+				VideoController.instant._videoSeekSlider.gameObject.SetActive (false);
+				mediaPlayer.Stop ();
+			}
 		}
 
 //		#endregion // PRIVATE_METHODS
