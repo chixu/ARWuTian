@@ -100,6 +100,10 @@ namespace Vuforia
 			foreach (Canvas ca in canvas) {
 				ca.gameObject.SetActive (true);
 			}
+			//PlayVideo ();
+		}
+
+		public void PlayVideo(){
 			if(mediaPlayer) {
 				//mediaPlayer.OpenVideoFromFile (MediaPlayer.FileLocation.AbsolutePathOrURL, videoPath, true);
 				//VCR.instant
