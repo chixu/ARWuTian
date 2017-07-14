@@ -45,7 +45,7 @@ public class SceneController : MonoBehaviour {
 
 	public void HideAll(){
 		topText.text = "";
-		backButton.SetActive (false);
+		if(backButton!=null)backButton.SetActive (false);
 	}
 
 	public void OnBackClick(){
