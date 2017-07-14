@@ -11,17 +11,41 @@ public class SceneController : MonoBehaviour {
 	public Text topText;
 	public GameObject backButton;
 	public static GameObject currentTrackableObject;
+	public static SceneController instant;
+
+	void Awake(){
+		instant = this;
+	}
 
 	// Use this for initialization
 	void Update(){
 		text.gameObject.SetActive (!slider.activeSelf);
-		if (slider.activeSelf) {
-			topText.text = text.text;
-			backButton.SetActive (true);
-		} else {
-			topText.text = "";
-			backButton.SetActive (false);
-		}
+//		if (slider.activeSelf) {
+//			topText.text = text.text;
+//			backButton.SetActive (true);
+//		} else {
+//			topText.text = "";
+//			backButton.SetActive (false);
+//		}
+	}
+
+	//showing 3d object
+	public void ShowBackButtonOnly(){
+		text.gameObject.SetActive (true);
+		topText.text = "";
+		backButton.SetActive (true);
+	}
+
+	//showing video
+	public void ShowTop(){
+		text.gameObject.SetActive (false);
+		topText.text = text.text;
+		backButton.SetActive (true);
+	}
+
+	public void HideAll(){
+		topText.text = "";
+		backButton.SetActive (false);
 	}
 
 	public void OnBackClick(){

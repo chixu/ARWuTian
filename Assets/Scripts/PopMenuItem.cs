@@ -18,8 +18,9 @@ public class PopMenuItem : MonoBehaviour {
 	public CustomTrackableEventHandler trackableHandler;
 	private MeshRenderer meshRenderer;
 	private Material material;
+	public GameObject threeDObject = null;
 
-	public void Start(){
+	public void Awake(){
 		origY = this.transform.localPosition.y;
 		origPosition = this.transform.localPosition;
 		origScale = this.transform.localScale;
@@ -90,15 +91,22 @@ public class PopMenuItem : MonoBehaviour {
 	void OnMouseDown(){
 
 		Debug.Log(index.ToString() + " is HIT!!!");
-		StopIdle ();
-		transform.DOMove (new Vector3(0,origPosition.y*2, 0),0.3f).SetEase(Ease.OutQuad);
-		transform.DOScale (origScale * 2,0.3f).SetEase(Ease.OutQuad).OnComplete(PlayVideo);
+		if (threeDObject == null) {
+			StopIdle ();
+			transform.DOMove (new Vector3 (0, origPosition.y * 2, 0), 0.3f).SetEase (Ease.OutQuad);
+			transform.DOScale (origScale * 2, 0.3f).SetEase (Ease.OutQuad).OnComplete (PlayVideo);
+		} else {
+			SceneController.instant.ShowBackButtonOnly ();
+			threeDObject.SetActive (true);
+			trackableMenu.HideAllItems ();
+		}
 	}
 
 	void PlayVideo(){
 		trackableMenu.HideAllItems (index);
 		trackableHandler.PlayVideo ();
 		meshRenderer.material = trackableMenu.playerMateral;
+		SceneController.instant.ShowTop ();
 		//trackableMenu.playerPlane.SetActive (true);
 	}
 }

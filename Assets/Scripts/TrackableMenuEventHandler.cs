@@ -11,10 +11,11 @@ using DG.Tweening;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Vuforia;
 
 
-namespace Vuforia
-{
+//MenuStaus
+
 	/// <summary>
 	/// A custom handler that implements the ITrackableEventHandler interface.
 	/// </summary>
@@ -33,6 +34,7 @@ namespace Vuforia
 		private TrackableBehaviour mTrackableBehaviour;
 		private CustomTrackableEventHandler customTrackable;
 		public Material playerMateral;
+		//public GameObject threeDObj;
 
 
 		public virtual void Start()
@@ -86,6 +88,7 @@ namespace Vuforia
 		virtual protected void OnTrackingFound()
 		{
 			StartCoroutine (PopAllItems());
+			HideAll3DModels ();
 			//playerPlane.SetActive (false);
 			//PopAllItems();
 		}
@@ -95,7 +98,7 @@ namespace Vuforia
 				menuItems [i].gameObject.SetActive (false);
 			}
 			List<int> idxes = Utils.RandomIntArray (4);
-			Debug.Log (idxes);
+			Debug.Log (idxes[0] + " " +idxes[1] + " "+idxes[2] + " "+idxes[3] );
 			for (int j = 0; j < menuItems.Length; j++) {
 				int i = idxes [j];
 				menuItems [i].Zoom ();
@@ -124,9 +127,22 @@ namespace Vuforia
 			for (int i = 0; i < menuItems.Length; i++) {
 				menuItems [i].Reset ();
 			}
-
+			HideAll3DModels ();
+			SceneController.instant.HideAll ();
 		}
 
+//		public void Show3DObj(int index){
+//			threeDObj.transform.GetChild (index).gameObject.SetActive (true);
+//		}
+
+		public void HideAll3DModels(){
+			//int count = threeDObj.transform.childCount;
+			for (int i = 0; i < menuItems.Length; i++) {
+				//threeDObj.transform.GetChild (i).gameObject.SetActive (false);
+				if (menuItems [i].threeDObject != null)
+					menuItems [i].threeDObject.SetActive (false);
+			}
+		}
 
 		public void HideAllItems(int exception = -1){
 			for (int i = 0; i < menuItems.Length; i++) {
@@ -139,10 +155,12 @@ namespace Vuforia
 
 		public void ShowMenu(){
 			customTrackable.StopVideo ();
+			SceneController.instant.HideAll ();
+			HideAll3DModels ();
 			for (int i = 0; i < menuItems.Length; i++) {
 				menuItems [i].Reset();
 				menuItems [i].Idle ();
 			}
 		}
 	}
-}
+
