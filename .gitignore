@@ -11,6 +11,7 @@
 /Assets/AssetBundlesAndroid*
 /Assets/AssetBundlesIOS*
 /Assets/AVProVideo*
+/Assets/Scripts/Commons*
 *.mp4*
 # Visual Studio 2015 cache directory
 /.vs/
