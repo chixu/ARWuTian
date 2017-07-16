@@ -1388,7 +1388,7 @@ Light:
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -1628,7 +1628,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 549af2e842707ad46b69b15c3972b1d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fileName: myassets.dlc
   mediaPlayer: {fileID: 1376431419}
   videoMaterial: {fileID: 2100000, guid: 9d1acef1007531448b2440b301e263d8, type: 2}
   title: {fileID: 1338467839}
