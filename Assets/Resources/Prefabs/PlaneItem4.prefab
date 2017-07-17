@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1382474579926138}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -0.23, y: 0.1, z: 0.17}
+  m_LocalPosition: {x: -0.21, y: 0.1, z: 0.15}
   m_LocalScale: {x: 0.044, y: 0.05, z: 0.03}
   m_Children: []
   m_Father: {fileID: 0}
@@ -106,11 +106,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ef73ec7e3bf28f4e898edf0f24ba841, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  origPosition: {x: 0, y: 0, z: 0}
+  origScale: {x: 0, y: 0, z: 0}
   floatSpeed: 5
   floatAmplitude: 0.03
   index: 0
-  trackableMenu: {fileID: 0}
+  menu: {fileID: 0}
   trackableHandler: {fileID: 0}
+  meshRenderer: {fileID: 0}
   material: {fileID: 0}
   threeDObject: {fileID: 0}
   videoPath: 

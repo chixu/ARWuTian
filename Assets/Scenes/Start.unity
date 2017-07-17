@@ -496,7 +496,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 640, y: 914}
+  m_SizeDelta: {x: 640, y: 1136}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &826667890
 MonoBehaviour:
@@ -517,7 +517,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ceb53af6b4ffa3f408e00fe130f597c1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0d24c2cb356021646a9c2fb83b880e06, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -633,7 +633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10d67fe8eb84d86468aebefda0a1d506, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  remoteUrl: 192.168.1.102:8080/web/wutian
+  remoteUrl: http://192.168.1.102:8080/web/wutian
   language: cn
   message: {fileID: 1104783844}
 --- !u!4 &1160516839
