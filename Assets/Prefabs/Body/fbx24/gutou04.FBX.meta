@@ -1,0 +1,134 @@
+fileFormatVersion: 2
+guid: 3e3203005acd38142ab2dbf8c5a4f952
+timeCreated: 1480297324
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Skeletal_Calcaneus
+    100004: Skeletal_Femur
+    100006: Skeletal_Fibula
+    100008: Skeletal_Malleolus
+    100010: Skeletal_Metatarsal
+    100012: Skeletal_Patella
+    100014: Skeletal_Pelvis
+    100016: Skeletal_Phalanges_Foot
+    100018: Skeletal_Pubis
+    100020: Skeletal_Sacrum
+    100022: Skeletal_Tarsal
+    100024: Skeletal_Tibia
+    400000: //RootNode
+    400002: Skeletal_Calcaneus
+    400004: Skeletal_Femur
+    400006: Skeletal_Fibula
+    400008: Skeletal_Malleolus
+    400010: Skeletal_Metatarsal
+    400012: Skeletal_Patella
+    400014: Skeletal_Pelvis
+    400016: Skeletal_Phalanges_Foot
+    400018: Skeletal_Pubis
+    400020: Skeletal_Sacrum
+    400022: Skeletal_Tarsal
+    400024: Skeletal_Tibia
+    2300000: Skeletal_Calcaneus
+    2300002: Skeletal_Femur
+    2300004: Skeletal_Fibula
+    2300006: Skeletal_Malleolus
+    2300008: Skeletal_Metatarsal
+    2300010: Skeletal_Patella
+    2300012: Skeletal_Pelvis
+    2300014: Skeletal_Phalanges_Foot
+    2300016: Skeletal_Pubis
+    2300018: Skeletal_Sacrum
+    2300020: Skeletal_Tarsal
+    2300022: Skeletal_Tibia
+    3300000: Skeletal_Calcaneus
+    3300002: Skeletal_Femur
+    3300004: Skeletal_Fibula
+    3300006: Skeletal_Malleolus
+    3300008: Skeletal_Metatarsal
+    3300010: Skeletal_Patella
+    3300012: Skeletal_Pelvis
+    3300014: Skeletal_Phalanges_Foot
+    3300016: Skeletal_Pubis
+    3300018: Skeletal_Sacrum
+    3300020: Skeletal_Tarsal
+    3300022: Skeletal_Tibia
+    4300000: Skeletal_Calcaneus
+    4300002: Skeletal_Femur
+    4300004: Skeletal_Fibula
+    4300006: Skeletal_Malleolus
+    4300008: Skeletal_Metatarsal
+    4300010: Skeletal_Patella
+    4300012: Skeletal_Pelvis
+    4300014: Skeletal_Phalanges_Foot
+    4300016: Skeletal_Sacrum
+    4300018: Skeletal_Tarsal
+    4300020: Skeletal_Tibia
+    4300022: Skeletal_Pubis
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
