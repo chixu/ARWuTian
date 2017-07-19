@@ -87,7 +87,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4171878983531808}
   - component: {fileID: 114710526152763106}
-  - component: {fileID: 82064416746499624}
   m_Layer: 0
   m_Name: body
   m_TagString: Untagged
@@ -120,6 +119,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4660390653583316}
+  - component: {fileID: 82574617216441268}
   m_Layer: 0
   m_Name: bodywrapper
   m_TagString: Untagged
@@ -2296,17 +2296,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1347472404782614}
   m_Mesh: {fileID: 4300006, guid: 51954cf6a7c8a6540a58cf144f49083d, type: 3}
---- !u!82 &82064416746499624
+--- !u!82 &82574617216441268
 AudioSource:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1144728785466686}
+  m_GameObject: {fileID: 1182923889284992}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 2319088d970075b44a2b410b112e4a6d, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
