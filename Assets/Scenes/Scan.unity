@@ -626,11 +626,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1538125616 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1537412183335476, guid: 978a9c6c52e28714bb62b11cd059788c,
-    type: 2}
-  m_PrefabInternal: {fileID: 1598719632}
 --- !u!1001 &1598719632
 Prefab:
   m_ObjectHideFlags: 0
@@ -902,10 +897,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1743687690}
   - component: {fileID: 1743687691}
-  - component: {fileID: 1743687692}
   - component: {fileID: 1743687693}
   - component: {fileID: 1743687694}
   - component: {fileID: 1743687695}
+  - component: {fileID: 1743687697}
+  - component: {fileID: 1743687696}
   m_Layer: 0
   m_Name: SceneController
   m_TagString: Untagged
@@ -937,21 +933,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a94b16e8108c3c642b32914cd0cdcd65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1743687692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1743687689}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 833b46359509a764f87788a9a4d02983, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  slider: {fileID: 1538125616}
-  text: {fileID: 751469298}
-  topText: {fileID: 1338467839}
-  backButton: {fileID: 2114377466}
 --- !u!114 &1743687693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -997,6 +978,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 751469298}
+--- !u!114 &1743687696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1743687689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3eaf6093640eddb4db74c374bf06d84e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smoothingFrames: 10
+--- !u!114 &1743687697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1743687689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4114ca95ba12f394a8ad43abfc86745c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mWorldCenterMode: 1
+  mWorldCenter: {fileID: 0}
+  mCentralAnchorPoint: {fileID: 0}
+  mParentAnchorPoint: {fileID: 0}
+  mPrimaryCamera: {fileID: 0}
+  mSecondaryCamera: {fileID: 0}
+  mWereBindingFieldsExposed: 0
 --- !u!1 &1775357340
 GameObject:
   m_ObjectHideFlags: 0
